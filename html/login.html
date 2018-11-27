@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Landing Page: Argentum</title>
+    <title>Login Page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -77,24 +77,41 @@
         </div>
       </nav>
     </div>
-
-    <div class="container">
+    <div id="formcontainer">
       <div class="row">
         <div class="col-lg-12">
-          <div id="intrologo">
-            <h1>Argentum</h1>
-            <h5>Argentum: Effortless budgeting</h5>
-            <hr />
-          </div>
-          <div id="contentbutton">
-            <button type="button" class="btn btn-dark btn-lg" id="submit">
-              Start now!
-            </button>
+          <div id="loginContent">
+            <div id="header">
+              <h3>Mock Login</h3>
+              <p>Please enter your username and password (Admin)</p>
+            </div>
+
+            <form id="myLogin" action="" method="post">
+              <div class="container">
+                <input
+                  type="username"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div class="container">
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <br />
+              </div>
+              <br />
+              <input type="submit" value="Login" />
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="" async defer></script>
   </body>
 </html>
