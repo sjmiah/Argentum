@@ -78,7 +78,10 @@
     <br />
     <br />
     <div id="formContent" class="container">
-        <div class="row"> <a class="btn btn-primary float-left" href="http://webdev.scs.ryerson.ca/~s2miah/budget.html" role="button">Back</a></div>
+        <div class="row"> 
+            <a class="btn btn-primary float-left" href="http://webdev.scs.ryerson.ca/~s2miah/budget.html" role="button">Back</a>
+        </div>
+    
         <?php
             $items = $_POST['itemsArray'];
             $price = $_POST['priceArray'];
