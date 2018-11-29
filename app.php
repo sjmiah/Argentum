@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Budget: Argentum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -77,44 +77,61 @@
     <br />
     <br />
     <br />
-    <div id="budgetContent" class="container">
+    <div id="formContent" class="container">
+        <div class="row"> <a class="btn btn-primary float-left" href="http://webdev.scs.ryerson.ca/~s2miah/budget.html" role="button">Back</a></div>
         <?php
             $items = $_POST['itemsArray'];
             $price = $_POST['priceArray'];
             $budget = $_POST['budget'];
             $income = $_POST['income'];
             $total = 0;
+           
             echo('<div class="row">');
-            echo 'Number of Items: ' . count($price);
+
+                echo('<div class="col">');
+                    echo('<div class="row"');
+                        echo('<h3>Input</h3>');
+                    echo('</div>');
+                    foreach( $items as $key => $currentItem ) {
+                        echo('<div class="row">');
+                            echo '{Item, Price}: ' . $currentItem . ', $' . $price[$key];
+                        echo('</div>');
+                        $total += $price[$key];
+                    }
+                echo('</div>');
+                echo('<div class="col">');
+
+                    echo('<div class="row"');
+                        echo('<h3>Feedback</h3>');
+                        echo('<br/>');
+                    echo('</div>');
+                  
+                    echo('<div class="row"');
+                        echo '<br/>' . 'Monthly Income: $' . $income;
+                        echo '<br/>' . 'Monthly Budget $' . $budget;
+                        echo '<br/>' . 'Total Expenses: $' . $total;
+                        echo '<br/>' . 'Remaining Budget: $' . ($budget - $total);
+                    echo('</div>');
+
+                echo('</div>');
+
             echo('</div>'); 
-            
-            foreach( $items as $key => $currentItem ) {
-                echo('<div class="row">');
-                    echo '(Item, Price): ' . $currentItem . ', $' . $price[$key];
-                echo('</div>');
-                $total += $price[$key];
-            }
-            echo('<div class="row">');
-                echo('<div class="col-sm-4"');
-                    echo '<br />' . 'Monthly Limit: ' . $budget;
-                    echo '<br />' . 'Income: ' . $income;
-                echo('</div>');
-
-                echo('<div class="col-sm-4"');
-                    echo '<br />' . 'Total Expenses: ' . $total;
-                    echo '<br />' . 'Remaining Budget: ' . ($budget - $total);
-                echo('</div>');
-            echo('</div>');
-
+                    
+            echo('<br />');
             echo('<div class="row"');
                 if ($budget > $total){
-                    echo '<p>You stayed under your budget. Keep up the great work! :-)</p>';
+                    if($income > $total && (($income - $total) / $income) > 0.50){
+                        echo '<p>You stayed under your budget and saved more than half your income. Amazing! Keep up the great work! :-)</p>';
+                    }else{
+                        echo '<p>You stayed under your budget. Keep up the great work! :-)</p>';
+                    }
                 }else if ($budget == $total){
                     echo '<p>Your expenses might have been high this month. You still spent within your budget. Good job</p>';
                 }else{
                     echo '<p>You need to reign in your spending. You went over your budget for the month :(';
                 }
             echo('</div>');
+            echo('<br />');
         ?>
     </div>
   </body>
