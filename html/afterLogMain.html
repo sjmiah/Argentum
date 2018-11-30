@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Login Page</title>
+    <title>Landing Page: Argentum</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -48,7 +48,7 @@
     <div class="pages">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Argentum</a>
+          <a class="navbar-brand" href="afterLogMain.html">Argentum</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -63,53 +63,40 @@
 
           <div class="collapse navbar-collapse" id="contentpages">
             <ul class="navbar-nav">
-                <li><a class="nav-link active" href="#">Profile</a></li>
-                <li><a class="nav-link active" href="aboutUs.html">About Us</a></li>
-                <li><a class="nav-link active" href="#">Contact</a></li>
-              </ul>
-  
-              <ul class="navbar-nav ml-auto">
-                <li><a class="nav-link active" href="signup.html">Sign Up</a></li>
+              <li><a class="nav-link active" href="#">Profile</a></li>
+              <li><a class="nav-link active" href="budget.html">Data</a></li>
+              <li>
+                <a class="nav-link active" href="aboutUs.html">About Us</a>
+              </li>
+              <li><a class="nav-link active" href="#">Contact</a></li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li>
+                <a class="nav-link active" href="../index.html">Logout</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div id="formcontainer">
+
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div id="loginContent">
-            <div id="header">
-              <h3>Login</h3>
-              <p>Please enter your username and password</p>
-            </div>
-
-            <form id="myLogin" value="Submit" action="loginCheck.php" method="POST">
-              <div class="container">
-                <input
-                  type="username"
-                  name="username"
-                  id="username"
-                  placeholder="Username"
-                />
-              </div>
-
-              <div class="container">
-                <br />
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
-                <br />
-              </div>
-              <br />
-              <input type="submit" value="Login" class="btn btn-dark btn-lg"/>
-            </form>
+          <div id="intrologo">
+            <h1>Argentum</h1>
+            <h5>Argentum: Effortless budgeting</h5>
+            <hr />
+          </div>
+          <div>
+            <p class="wlcMsg">WELCOME!</p>
+            <p class="wlcMsg">You Have Logged In!</p>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="" async defer></script>
   </body>
 </html>

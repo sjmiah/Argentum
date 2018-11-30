@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Budget: Argentum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -44,7 +44,7 @@
     <div class="pages">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Argentum</a>
+          <a class="navbar-brand" href="afterLogMain.html">Argentum</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -60,14 +60,14 @@
           <div class="collapse navbar-collapse" id="contentpages">
             <ul class="navbar-nav">
               <li><a class="nav-link active" href="#">Profile</a></li>
-              <li><a class="nav-link active" href="#">Data</a></li>
-              <li><a class="nav-link active" href="#">About Us</a></li>
+              <li><a class="nav-link active" href="budget.html">Data</a></li>
+              <li><a class="nav-link active" href="aboutUs.html">About Us</a></li>
               <li><a class="nav-link active" href="#">Contact</a></li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
-              <li><a class="nav-link active" href="#">Sign Up</a></li>
-              <li><a class="nav-link active" href="#">Login</a></li>
+              <li><a class="nav-link active" href="signup.html">Sign Up</a></li>
+              <li><a class="nav-link active" href="login.html">Login</a></li>
             </ul>
           </div>
         </div>
@@ -79,7 +79,7 @@
     <br />
     <div id="formContent" class="container">
         <div class="row"> 
-            <a class="btn btn-primary float-left" href="http://webdev.scs.ryerson.ca/~s2miah/budget.html" role="button">Back</a>
+            <a class="btn btn-primary float-left" href="budget.html" role="button">Back</a>
         </div>
     
         <?php

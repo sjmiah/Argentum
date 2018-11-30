@@ -8,8 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Landing Page: Argentum</title>
-    <meta name="description" content="" />
+    <title>About Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -64,7 +63,9 @@
           <div class="collapse navbar-collapse" id="contentpages">
             <ul class="navbar-nav">
               <li><a class="nav-link active" href="#">Profile</a></li>
-              <li><a class="nav-link active" href="aboutUs.html">About Us</a></li>
+              <li>
+                <a class="nav-link active" href="aboutUs.html">About Us</a>
+              </li>
               <li><a class="nav-link active" href="#">Contact</a></li>
             </ul>
 
@@ -78,28 +79,65 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div id="intrologo">
-            <h1>Argentum</h1>
-            <h5>Argentum: Effortless budgeting</h5>
-            <hr />
+      <div class="team-select">
+        <h1>About Us</h1>
+        <span class="border"></span>
+        <div class="ps">
+          <a href="#p1"><img src="../images/aditya.jpg" alt="Aditya"/></a>
+          <a href="#p2"><img src="../images/aryan.png" alt="Aryan"/></a>
+          <a href="#p3"><img src="../images/Jeed.jpg" alt="Jeed"/></a>
+          <a href="#p4"><img src="../images/sandy.jpg" alt="Sandy"/></a>
+          <a href="#p5"><img src="../images/shyum.png" alt="Shyum"/></a>
+          <a href="#p6"><img src="../images/william.jpg" alt="William"/></a>
+        </div>
+        <div class="row">
+          <div class="selection" id="p1">
+            <span class="name">Aditya</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Hard worker <br />
+              Weakness: Slow starter
+            </p>
           </div>
-          <div id="contentbutton">
-            <button id="myButton" class="btn btn-dark btn-lg" >Start Now!</button>
 
-            <script type="text/javascript">
-                document.getElementById("myButton").onclick = function () {
-                    location.href = "signup.html";
-                };
-            </script>
-
-
+          <div class="selection" id="p2">
+            <span class="name">Aryan</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Communication <br />
+              Weakness: Time management
+            </p>
+          </div>
+          <div class="selection" id="p3">
+            <span class="name">Shajeed</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Problem solver who likes to get things done <br />
+              Weakness: Not a good team player
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="selection" id="p4">
+            <span class="name">Sandy</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Literacy <br />
+              Weakness: Programming
+            </p>
+          </div>
+          <div class="selection" id="p5">
+            <span class="name">Shyum</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Patient and team worker <br />
+              Weakness: Under Achiever
+            </p>
+          </div>
+          <div class="selection" id="p6">
+            <span class="name">William</span> <span class="border"></span>
+            <p class="discription">
+              Strength: Team worker <br />
+              Weakness: Time management
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="" async defer></script>
   </body>
 </html>
